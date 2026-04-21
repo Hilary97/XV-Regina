@@ -35,7 +35,7 @@ export default function Contact() {
           {/* WhatsApp Button */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <a
-              href={`https://wa.me/${phoneNumber}?text=Hola!%20Quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20de%20Regina%20Sarahi`}
+              href={`https://wa.me/${phoneNumber}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
