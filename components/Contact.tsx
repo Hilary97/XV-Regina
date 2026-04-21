@@ -24,10 +24,10 @@ export default function Contact() {
             <div className="w-20 h-20 mx-auto mb-6 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center">
               <span className="text-4xl">💬</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-serif text-rose-800 mb-4">
               Contacto
             </h2>
-            <p className="text-rose-900 text-lg max-w-xl mx-auto">
+            <p className="text-rose-700 text-lg max-w-xl mx-auto">
               ¿Tienes alguna duda sobre el evento? ¡Escríbenos!
             </p>
           </div>
