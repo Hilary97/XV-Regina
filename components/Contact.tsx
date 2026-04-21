@@ -27,7 +27,7 @@ export default function Contact() {
             <h2 className="text-4xl md:text-5xl font-serif text-white mb-4">
               Contacto
             </h2>
-            <p className="text-rose-100 text-lg max-w-xl mx-auto">
+            <p className="text-rose-900 text-lg max-w-xl mx-auto">
               ¿Tienes alguna duda sobre el evento? ¡Escríbenos!
             </p>
           </div>
@@ -41,13 +41,13 @@ export default function Contact() {
               className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:via-amber-600 hover:to-amber-700 text-amber-950 px-8 py-4 rounded-2xl font-medium transition-all duration-300 shadow-lg shadow-amber-300 hover:shadow-xl hover:scale-[1.02]"
             >
               <span className="text-2xl">💬</span>
-              <span className="text-lg">Confirmar por WhatsApp</span>
+              <span className="text-lg">Enviame msj por WhatsApp</span>
             </a>
           </div>
 
           {/* Decorative footer */}
           <div className="text-center mt-8">
-            <p className="text-rose-300/60 text-sm">
+            <p className="text-rose-500/60 text-sm">
               ✨ Estamos ansiosos por compartir este día contigo ✨
             </p>
           </div>
