@@ -5,7 +5,7 @@ export default function Contact() {
 
   return (
     <section className="py-16 px-4 mx-4 my-8 rounded-3xl">
-      <div className="rounded-3xl bg-gradient-to-br from-rose-300 via-rose-400 to-rose-400 shadow-2xl py-12 px-6">
+      <div className="rounded-3xl bg-gradient-to-br from-rose-100 via-rose-100 to-rose-50 shadow-2xl py-12 px-6">
         {/* Decorative elements */}
         <div className="absolute inset-0 opacity-10 rounded-3xl">
           <div className="absolute top-10 left-10 w-32 h-32 border border-white rounded-full" />
@@ -38,9 +38,9 @@ export default function Contact() {
               href={`https://wa.me/${phoneNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:via-amber-600 hover:to-amber-700 text-amber-950 px-8 py-4 rounded-2xl font-medium transition-all duration-300 shadow-lg shadow-amber-300 hover:shadow-xl hover:scale-[1.02]"
             >
-              <span className="text-2xl">💚</span>
+              <span className="text-2xl">💬</span>
               <span className="text-lg">Confirmar por WhatsApp</span>
             </a>
           </div>

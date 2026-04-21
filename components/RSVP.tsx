@@ -93,9 +93,9 @@ export default function RSVP() {
             {/* WhatsApp button */}
             <button
               onClick={handleConfirm}
-              className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-4 rounded-2xl font-medium transition-all duration-300 shadow-lg shadow-green-200 hover:shadow-xl flex items-center justify-center gap-3"
+              className="w-full bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:via-amber-600 hover:to-amber-700 text-amber-950 py-4 rounded-2xl font-medium transition-all duration-300 shadow-lg shadow-amber-300 hover:shadow-xl hover:scale-[1.02] flex items-center justify-center gap-3"
             >
-              <span className="text-xl">💚</span>
+              <span className="text-xl">💬</span>
               Confirmar por WhatsApp
             </button>
           </div>
