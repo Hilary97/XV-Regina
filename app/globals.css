@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rosesoft: #f8e4e4;
+  --color-rosemedium: #f4c2c2;
+  --color-gold: #d4af37;
+  --color-goldlight: #f5e6c8;
+  --color-cream: #fdf8f3;
+  --color-dark: #2c2c2c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-dark);
+}
