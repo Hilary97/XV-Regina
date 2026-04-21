@@ -31,17 +31,20 @@ export default function WelcomeCard() {
     <div
       className={`
         fixed inset-0 z-[100] flex items-center justify-center
-        bg-gradient-to-b from-rose-700 via-rose-400 to-rose-600
+        bg-cover bg-center
         transition-all duration-700 ease-out
         ${isExiting ? "opacity-0 pointer-events-none" : "opacity-100"}
         ${isExiting ? "scale-110" : "scale-100"}
       `}
+      style={{ backgroundImage: "url(/images/crown.png)" }}
     >
+      {/* Overlay sutil para que resalte el texto */}
+      <div className="absolute inset-0 bg-black/75" />
       <div
         className={`
           relative max-w-md mx-4 p-8 text-center
           transform transition-all duration-1000 ease-out
-          ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
+          ${isVisible ? "opacity-100 translate-y-0" : "opacity-100 translate-y-8"}
           ${isExiting ? "scale-95" : "scale-100"}
         `}
       >
@@ -111,4 +114,3 @@ export default function WelcomeCard() {
     </div>
   );
 }
-
