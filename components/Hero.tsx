@@ -11,7 +11,12 @@ interface TimeLeft {
 }
 
 function Countdown({ targetDate }: { targetDate: Date }) {
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
   const [isExpired, setIsExpired] = useState(false);
 
   useEffect(() => {
@@ -68,7 +73,9 @@ function Countdown({ targetDate }: { targetDate: Date }) {
               </span>
             </div>
             {index < timeUnits.length - 1 && (
-              <span className="text-white/50 text-2xl md:text-3xl ml-4 md:ml-6 pb-6">:</span>
+              <span className="text-white/50 text-2xl md:text-3xl ml-4 md:ml-6 pb-6">
+                :
+              </span>
             )}
           </div>
         ))}
@@ -81,7 +88,10 @@ export default function Hero({ id }: { id?: string }) {
   const eventDate = new Date("2026-06-13T00:00:00");
 
   return (
-    <section id={id} className="py-4 px-4 mx-4 rounded-3xl overflow-hidden shadow-2xl">
+    <section
+      id={id}
+      className="py-4 px-4 mx-4 rounded-3xl overflow-hidden shadow-2xl"
+    >
       <div className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden rounded-2xl">
         {/* Background Image */}
         <div className="absolute inset-0 z-0 rounded-2xl">
@@ -93,7 +103,7 @@ export default function Hero({ id }: { id?: string }) {
             priority
           />
           {/* Overlay para que el texto sea legible */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60 rounded-2xl" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/60 rounded-2xl" />
         </div>
 
         {/* Decorative elements */}
@@ -138,7 +148,9 @@ export default function Hero({ id }: { id?: string }) {
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
           <div className="flex flex-col items-center gap-2">
-            <span className="text-white/50 text-xs tracking-widest uppercase">Scroll</span>
+            <span className="text-white/50 text-xs tracking-widest uppercase">
+              Scroll
+            </span>
             <div className="w-8 h-14 rounded-full border-2 border-white/30 flex items-start justify-center p-2">
               <div className="w-1.5 h-3 bg-white/60 rounded-full animate-bounce" />
             </div>
