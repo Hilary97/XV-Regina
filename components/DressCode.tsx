@@ -6,7 +6,7 @@ export default function DressCode() {
       <div className="rounded-3xl bg-gradient-to-b from-rose-100 via-white to-rose-50 shadow-2xl py-12 px-6">
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-32 h-32 bg-rose-100 rounded-full -translate-x-16 -translate-y-16 opacity-50" />
-        <div className="absolute bottom-0 right-0 w-48 h-48 bg-rose-100 rounded-full translate-x-24 translate-y-24 opacity-50" />
+        
         <div className="absolute top-1/2 left-10 w-2 h-2 bg-rose-300 rounded-full" />
         <div className="absolute top-1/3 right-10 w-3 h-3 bg-rose-200 rounded-full" />
 
