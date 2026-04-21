@@ -15,12 +15,15 @@ export default function RSVP() {
       return;
     }
 
-    // Crear mensaje para WhatsApp
+    // Crear mensaje para WhatsApp - usando Unicode escapes para mejor compatibilidad
+    const monoEmoji = "\u{1F412}"; // 🙈
+    const corazonEmoji = "\u{2764}\u{FE0F}"; // ♥️
+
     const mensaje = encodeURIComponent(
-      `¡Hola! Quiero confirmar mi asistencia a los XV de Regina Sarahi.\n\n` +
+      `¡Hola! Quiero confirmar mi asistencia a tu fiesta de XV ${monoEmoji}.\n\n` +
         `Nombre: ${name}\n` +
         `Número de personas: ${guests}\n\n` +
-        `¡Gracias!`,
+        `¡Gracias ${corazonEmoji}!`,
     );
 
     // Abrir WhatsApp
@@ -32,7 +35,7 @@ export default function RSVP() {
       <div className="rounded-3xl bg-gradient-to-b from-rose-100 via-rose-50 to-rose-100 shadow-2xl py-12 px-6">
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-40 h-40 bg-rose-200 rounded-full -translate-x-20 -translate-y-20 opacity-50" />
-        
+
         <div className="absolute top-1/4 right-10 w-4 h-4 bg-rose-400 rounded-full" />
         <div className="absolute bottom-1/4 left-10 w-3 h-3 bg-rose-300 rounded-full" />
 
@@ -110,4 +113,3 @@ export default function RSVP() {
     </section>
   );
 }
-
