@@ -26,7 +26,7 @@ export default function Message() {
 
         {/* Main message */}
         <p className="font-[family-name:var(--font-playfair)] text-xl md:text-2xl lg:text-3xl text-white leading-relaxed drop-shadow-lg">
-          Durante mucho imaginé este día,
+          Durante mucho tiempo imaginé este día,
           <br />
           <span className="text-rose-200">lo soñé</span> con música, luces,
           risas y abrazos.
