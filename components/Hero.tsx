@@ -77,11 +77,11 @@ function Countdown({ targetDate }: { targetDate: Date }) {
   );
 }
 
-export default function Hero() {
+export default function Hero({ id }: { id?: string }) {
   const eventDate = new Date("2026-06-13T00:00:00");
 
   return (
-    <section className="py-4 px-4 mx-4 rounded-3xl overflow-hidden shadow-2xl">
+    <section id={id} className="py-4 px-4 mx-4 rounded-3xl overflow-hidden shadow-2xl">
       <div className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden rounded-2xl">
         {/* Background Image */}
         <div className="absolute inset-0 z-0 rounded-2xl">

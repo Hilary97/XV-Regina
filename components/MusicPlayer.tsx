@@ -31,19 +31,26 @@ function MusicNotesIcon({ className }: { className?: string }) {
 }
 
 export default function MusicPlayer() {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const hasInteracted = useRef(false);
 
+  // Listen for custom event to start playback (from WelcomeCard)
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (audioRef.current) {
+    const handleStartAudio = () => {
+      if (audioRef.current && !hasInteracted.current) {
         audioRef.current.loop = true;
-        audioRef.current.play().catch(() => {
-          // Autoplay blocked - user needs to click
+        audioRef.current.play().then(() => {
+          setIsPlaying(true);
+          hasInteracted.current = true;
+        }).catch(() => {
+          // Autoplay blocked - show play button
         });
       }
-    }, 500);
-    return () => clearTimeout(timer);
+    };
+
+    window.addEventListener("start-audio", handleStartAudio);
+    return () => window.removeEventListener("start-audio", handleStartAudio);
   }, []);
 
   const togglePlay = () => {

@@ -10,12 +10,14 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Separator from "@/components/Separator";
 import MusicPlayer from "@/components/MusicPlayer";
+import WelcomeCard from "@/components/WelcomeCard";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <WelcomeCard />
       <MusicPlayer />
-      <Hero />
+      <Hero id="hero" />
       <Separator />
       <Message />
       <Separator />
