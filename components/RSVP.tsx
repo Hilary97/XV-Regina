@@ -16,7 +16,7 @@ export default function RSVP() {
     }
 
     // Crear mensaje para WhatsApp - usando Unicode escapes para mejor compatibilidad
-    const monoEmoji = "\u{1F412}"; // 🙈
+    const monoEmoji = "\u{1F648}"; // 🙈
     const corazonEmoji = "\u{2764}\u{FE0F}"; // ♥️
 
     const mensaje = encodeURIComponent(
