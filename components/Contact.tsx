@@ -1,7 +1,7 @@
 "use client";
 
 export default function Contact() {
-  const phoneNumber = "525512345678"; // Cambia este número
+  const phoneNumber = "3313329960"; // Cambia este número
 
   return (
     <section className="py-16 px-4 mx-4 my-8 rounded-3xl">
@@ -45,19 +45,6 @@ export default function Contact() {
             </a>
           </div>
 
-          {/* Alternative contact */}
-          <div className="mt-12 pt-8 border-t border-white/20">
-            <p className="text-center text-rose-200 text-sm">
-              También puedes escribirnos al correo:
-              <a
-                href="mailto:xvregina@example.com"
-                className="text-white underline hover:text-rose-200 ml-1"
-              >
-                xvregina@example.com
-              </a>
-            </p>
-          </div>
-
           {/* Decorative footer */}
           <div className="text-center mt-8">
             <p className="text-rose-300/60 text-sm">
@@ -69,4 +56,3 @@ export default function Contact() {
     </section>
   );
 }
-
